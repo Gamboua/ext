@@ -1,0 +1,34 @@
+{
+  "name": "Magazine Luiza Assistante para Chrome",
+  "version": "1.0",
+  "description": "",
+  "permissions": [
+    "tabs", "storage", "http://*/*", "https://*/*", 
+    "activeTab", "declarativeContent", "storage",
+    "notifications", "bookmarks", "management", "geolocation",
+    "webRequestBlocking", "contextMenus","alarms", "cookies" 
+  ],
+  "background": {
+    "scripts": [
+      "static/js/prod.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "static/html/popup.html",
+    "default_icon": {
+      "16": "static/images/magazine_icon_16.png",
+      "32": "static/images/magazine_icon_32.png",
+      "48": "static/images/magazine_icon_48.png",
+      "128":"static/images/magazine_icon_128.png"
+    }
+  },
+  "icons": {
+      "16": "static/images/magazine_icon_16.png",
+      "32": "static/images/magazine_icon_32.png",
+      "48": "static/images/magazine_icon_48.png",
+      "128":"static/images/magazine_icon_128.png"
+  },
+  "manifest_version": 2
+}
+
